@@ -39,6 +39,8 @@ Example for Linux distros:
 $ gem install pixelchart
 ```
 
+See [the documentation](https://pixelchart.cf/yard/file.Install.html) for more more advanced options.
+
 ## Usage
 
 **CLI**
