@@ -1,6 +1,7 @@
 --output-dir docs/yard
 -
 --main pages/Landing.md
+pages/CHANGELOG.md
 pages/CLI.md
 pages/Install.md
 pages/Publishing.md

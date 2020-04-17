@@ -3,6 +3,7 @@
 --private
 -
 --main pages/Landing.md
+pages/CHANGELOG.md
 pages/CLI.md
 pages/Install.md
 pages/Publishing.md
