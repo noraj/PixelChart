@@ -1,0 +1,8 @@
+.yardoc
+*.gem
+/pkg
+/vendor
+.bundle/
+/node_modules
+*.png
+*.csv

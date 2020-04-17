@@ -1,0 +1,89 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Ruby internal
+require 'pp'
+# Project internal
+require 'pixelchart'
+# External
+require 'docopt'
+require 'paint'
+
+doc = <<~DOCOPT
+  PixelChart - Map binary data into a beautiful chart
+
+  Usage:
+    pixelchart draw <input> <output> (--width <pixel> --height <pixel>) [--colors <colors>] [--backend <name>] [--scale <ratio>] [--no-color] [--debug]
+    pixelchart calc (--area <size>|<input>) [--no-color] [--debug]
+    pixelchart -H | --help
+    pixelchart -V | --version
+
+  Options:
+    <input>                         Input file containing values
+    <output>                        Output image (filename)
+    -w <pixel>, --width <pixel>     Width of the output image (in number pixel)
+    -h <pixel>, --height <pixel>    Height of the output image (in number pixel)
+    -c <colors>, --colors <colors>  Colors of the image (in RGB or random)
+    -b <name>, --backend <name>     Image processing backend (rmagick or ruby-vips)
+    -s <ratio>, --scale <ratio>     Scale ratio or dimensions
+    --area <size>                   Area, number of values, total number of pixel
+    --no-color      Disable colorized output
+    --debug         Display arguments
+    -H, --help      Show this screen
+    -V, --version   Show version
+
+  Examples:
+    pixelchart draw test.csv test.png -w 100 -h 100
+    pixelchart draw test.csv test.png -w 100 -h 100 -c 'random|125,125,125' -b rubyvips
+    pixelchart calc test.csv
+    pixelchart calc --area 10000 --no-color
+DOCOPT
+
+begin
+  args = Docopt.docopt(doc, version: PixelChart::VERSION)
+  pp args if args['--debug']
+  Paint.mode = 0 if args['--no-color']
+  if args['draw']
+    data = PixelChart.load_file(args['<input>'])
+    width = args['--width'].to_i
+    height = args['--height'].to_i
+    filename = args['<output>']
+    opts = {}
+    if args['--colors']
+      colors = args['--colors'].split('|')
+      colors.each_with_index do |col, i|
+        colors[i] = if col == 'random'
+                      col.to_sym
+                    else
+                      colors[i] = col.split(',').map(&:to_i)
+                    end
+      end
+      opts[:colors] = colors
+    end
+    opts[:backend] = args['--backend'].to_sym if args['--backend']
+    if args['--scale']
+      opts[:scale] =  if /,/.match?(args['--scale']) # dimensions
+                        args['--scale'].split(',').map(&:to_i)
+                      else # ratio
+                        args['--scale'].to_f
+                      end
+    end
+    pc = PixelChart.new(data, width, height, opts)
+    pc.draw(filename, opts)
+    puts Paint['[+]', :green] + ' Image saved'
+  elsif args['calc']
+    dimensions = nil
+    if args['--area']
+      dimensions = PixelChart.dimensions(args['--area'].to_i)
+    elsif args['<input>']
+      data = PixelChart.load_file(args['<input>'])
+      dimensions = PixelChart.dimensions(data.size)
+    end
+    puts 'Possible dimensions: width x height or height x width'
+    dimensions.each do |xy|
+      puts Paint[xy[0], :magenta] + ' x ' + Paint[xy[1], :magenta]
+    end
+  end
+rescue Docopt::Exit => e
+  puts e.message
+end

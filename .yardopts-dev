@@ -1,0 +1,8 @@
+--output-dir docs/yard
+--protected
+--private
+-
+--main Landing.md
+pages/CLI.md
+pages/Scenarios.md
+LICENSE.txt
