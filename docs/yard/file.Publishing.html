@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>
-  Top Level Namespace
+  File: Publishing
   
     &mdash; Documentation by YARD 0.9.24
   
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/common.css" type="text/css" />
 
 <script type="text/javascript">
-  pathId = "";
+  pathId = "Publishing";
   relpath = '';
 </script>
 
@@ -28,7 +28,7 @@
   </head>
   <body>
     <div class="nav_wrap">
-      <iframe id="nav" src="class_list.html?1"></iframe>
+      <iframe id="nav" src="file_list.html?1"></iframe>
       <div id="resizer"></div>
     </div>
 
@@ -36,10 +36,8 @@
       <div id="header">
         <div id="menu">
   
-    <a href="_index.html">Index</a> &raquo;
-    
-    
-    <span class="title">Top Level Namespace</span>
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: Publishing</span>
   
 </div>
 
@@ -59,47 +57,26 @@
         <div class="clear"></div>
       </div>
 
-      <div id="content"><h1>Top Level Namespace
-  
-  
-  
-</h1>
-<div class="box_info">
-  
+      <div id="content"><div id='filecontents'><h2>On Rubygems.org</h2>
 
-  
-  
-  
-  
-  
+<pre class="code ruby"><code class="ruby">$ git tag -a vx.x.x
+$ git push --follow-tags
+$ gem push pixelchart-x.x.x.gem
+</code></pre>
 
-  
+<p>See <a href="https://guides.rubygems.org/publishing/">https://guides.rubygems.org/publishing/</a>.</p>
 
-  
-</div>
+<p>On new release don&#39;t forget to rebuild the library documentation:</p>
 
-<h2>Defined Under Namespace</h2>
-<p class="children">
-  
-    
-      <strong class="modules">Modules:</strong> <span class='object_link'><a href="Version.html" title="Version (module)">Version</a></span>
-    
-  
-    
-      <strong class="classes">Classes:</strong> <span class='object_link'><a href="PixelChart.html" title="PixelChart (class)">PixelChart</a></span>
-    
-  
-</p>
+<pre class="code ruby"><code class="ruby">$ bundle exec yard doc
+</code></pre>
 
+<h2>On AUR</h2>
 
-
-
-
-
-
-
-
-</div>
+<pre class="code ruby"><code class="ruby">$ updpkgsums
+$ makepkg --printsrcinfo &gt; .SRCINFO
+</code></pre>
+</div></div>
 
       <div id="footer">
   Generated on Fri Apr 17 17:24:55 2020 by

@@ -1,6 +1,8 @@
 --output-dir docs/yard
 -
---main Landing.md
+--main pages/Landing.md
 pages/CLI.md
+pages/Install.md
+pages/Publishing.md
 pages/Scenarios.md
 LICENSE.txt

@@ -1,5 +1,13 @@
 ![](docs/images/logo.png)
 
+[![Gem Version](https://badge.fury.io/rb/pixelchart.svg)](https://badge.fury.io/rb/pixelchart)
+![AUR version](https://img.shields.io/aur/version/pixelchart)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/noraj/PixelChart)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/noraj/PixelChart)
+[![GitHub forks](https://img.shields.io/github/forks/noraj/PixelChart)](https://github.com/noraj/PixelChart/network)
+[![GitHub stars](https://img.shields.io/github/stars/noraj/PixelChart)](https://github.com/noraj/PixelChart/stargazers)
+[![GitHub license](https://img.shields.io/github/license/noraj/PixelChart)](https://github.com/noraj/PixelChart/blob/master/LICENSE.txt)
+
 # PixelChart
 
 > Map binary data into a beautiful chart
@@ -39,7 +47,19 @@ $ gem install pixelchart
 $ pixelchart draw test.csv test.png -w 100 -h 100 -s 3
 [+] Image saved
 ```
+
+See the [CLI documentation](https://pixelchart.cf/yard/file.CLI.html).
+
 **library**
+
+See the [library documentation](https://pixelchart.cf/yard/PixelChart.html).
 
 **scenarios**
 
+See some [scenarios](https://pixelchart.cf/yard/file.Scenarios.html) with examples.
+
+## Documentation
+
+- [Custom domain](https://pixelchart.cf/yard/PixelChart.html)
+- [Backup GitHub domain](https://noraj.github.io/PixelChart/yard/PixelChart.html)
+- [RubyDoc hosted](https://www.rubydoc.info/gems/pixelchart/PixelChart)

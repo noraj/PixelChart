@@ -126,9 +126,10 @@ So if want a final image of 500x500 size, you can apply a x5 ratio.</p>
 <p>Note: the scale factor must be a ratio or dimensions. Ratio must be a positive
 (non-nul) float or integer, and dimensions must be a set of width and height
 separated by a comma. Eg. <code>10</code>, <code>4.2</code>, <code>100,500</code>. The aspect ratio may be
-different than the initial dimensions chosen, eg. <code>-w 100 -h 100 -s 600,70</code>.</p>
+different than the initial dimensions chosen, eg. <code>-w 100 -h 100 -s 600,70</code>.
+rubyvips backend only supports a ratio, not dimensions.</p>
 
-<pre class="code ruby"><code class="ruby">$ pixelchart draw test.csv test.png -w 100 -h 100 -s &#39;5&#39;
+<pre class="code ruby"><code class="ruby">$ pixelchart draw test.csv test.png -w 100 -h 100 -s 5
 [+] Image saved
 </code></pre>
 
@@ -171,7 +172,7 @@ behavior.</p>
 </div></div>
 
       <div id="footer">
-  Generated on Mon Apr 13 03:39:21 2020 by
+  Generated on Fri Apr 17 17:24:55 2020 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.24 (ruby-2.7.0).
 </div>

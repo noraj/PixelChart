@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.description   = s.summary
   s.authors       = ['Alexandre ZANNI']
   s.email         = 'alexandre.zanni@engineer.com'
-  #s.homepage      = 'xxx'
+  s.homepage      = 'https://pixelchart.cf/'
   s.license       = 'MIT'
 
   s.files         = Dir['bin/*'] + Dir['lib/**/*.rb'] + ['LICENSE.txt']
@@ -19,14 +19,14 @@ Gem::Specification.new do |s|
   s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
   s.require_paths = ['lib']
 
-  #s.metadata = {
-  #  'yard.run'          => 'yard',
-  #  'bug_tracker_uri'   => 'https://github.com/noraj/pixelchart/issues',
-  #  'changelog_uri'     => 'https://github.com/noraj/pixelchart/blob/master/docs/CHANGELOG.md',
-  #  'documentation_uri' => 'https://xxx/',
-  #  'homepage_uri'      => 'https://xxx/',
-  #  'source_code_uri'   => 'https://github.com/noraj/pixelchart/'
-  #}
+  s.metadata = {
+    'yard.run'          => 'yard',
+    'bug_tracker_uri'   => 'https://github.com/noraj/PixelChart/issues',
+    'changelog_uri'     => 'https://github.com/noraj/PixelChart/blob/master/pages/CHANGELOG.md',
+    'documentation_uri' => 'https://pixelchart.cf/yard/',
+    'homepage_uri'      => 'https://pixelchart.cf/',
+    'source_code_uri'   => 'https://github.com/noraj/PixelChart'
+  }
 
   s.required_ruby_version = '~> 2.4'
 
