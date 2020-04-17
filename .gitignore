@@ -4,5 +4,5 @@
 /vendor
 .bundle/
 /node_modules
-*.png
-*.csv
+/*.png
+/*.csv
