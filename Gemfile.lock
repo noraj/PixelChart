@@ -29,7 +29,7 @@ GEM
     rake (13.0.1)
     redcarpet (3.5.0)
     rexml (3.2.4)
-    rmagick (4.1.1)
+    rmagick (4.1.2)
     rubocop (0.81.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
