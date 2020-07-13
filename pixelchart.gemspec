@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.name          = 'pixelchart'
   s.version       = Version::VERSION
   s.platform      = Gem::Platform::RUBY
-  s.date          = '2020-04-09'
+  s.date          = '2020-07-13'
   s.summary       = 'Create a binary pixel map'
   s.description   = s.summary
   s.authors       = ['Alexandre ZANNI']
@@ -28,7 +28,7 @@ Gem::Specification.new do |s|
     'source_code_uri'   => 'https://github.com/noraj/PixelChart'
   }
 
-  s.required_ruby_version = '~> 2.4'
+  s.required_ruby_version = '~> 2.7'
 
   s.add_runtime_dependency('docopt', '~> 0.6') # for argument parsing
   s.add_runtime_dependency('paint', '~> 2.2') # for colorized ouput

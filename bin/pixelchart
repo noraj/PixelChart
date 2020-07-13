@@ -24,7 +24,7 @@ doc = <<~DOCOPT
     -w <pixel>, --width <pixel>     Width of the output image (in number pixel)
     -h <pixel>, --height <pixel>    Height of the output image (in number pixel)
     -c <colors>, --colors <colors>  Colors of the image (in RGB or random)
-    -b <name>, --backend <name>     Image processing backend (rmagick or ruby-vips)
+    -b <name>, --backend <name>     Image processing backend (rmagick or rubyvips)
     -s <ratio>, --scale <ratio>     Scale ratio or dimensions
     --area <size>                   Area, number of values, total number of pixel
     --no-color      Disable colorized output

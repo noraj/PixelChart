@@ -46,9 +46,10 @@ class PixelChart
   def draw(filename, opts = {})
     opts[:backend] ||= :rmagick
     backend = check_backend(opts[:backend])
-    if backend == :rmagick
+    case backend
+    when :rmagick
       draw_rmagick(filename)
-    elsif backend == :rubyvips
+    when :rubyvips
       draw_rubyvips(filename)
     end
   end
