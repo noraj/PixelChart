@@ -16,7 +16,7 @@ GEM
     concurrent-ruby (1.1.6)
     docopt (0.6.1)
     ffi (1.12.2)
-    github-markup (3.0.4)
+    github-markup (3.0.5)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     minitest (5.14.3)
