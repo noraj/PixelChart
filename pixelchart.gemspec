@@ -6,7 +6,6 @@ Gem::Specification.new do |s|
   s.name          = 'pixelchart'
   s.version       = Version::VERSION
   s.platform      = Gem::Platform::RUBY
-  s.date          = '2020-07-13'
   s.summary       = 'Create a binary pixel map'
   s.description   = s.summary
   s.authors       = ['Alexandre ZANNI']
