@@ -70,7 +70,7 @@ begin
     end
     pc = PixelChart.new(data, width, height, opts)
     pc.draw(filename, opts)
-    puts Paint['[+]', :green] + ' Image saved'
+    puts "#{Paint['[+]', :green]} Image saved"
   elsif args['calc']
     dimensions = nil
     if args['--area']
@@ -81,7 +81,7 @@ begin
     end
     puts 'Possible dimensions: width x height or height x width'
     dimensions.each do |xy|
-      puts Paint[xy[0], :magenta] + ' x ' + Paint[xy[1], :magenta]
+      puts "#{Paint[xy[0], :magenta]} x #{Paint[xy[1], :magenta]}"
     end
   end
 rescue Docopt::Exit => e

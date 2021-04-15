@@ -104,13 +104,12 @@ class PixelChart
       end
     end
     unless @scale.nil?
-      if @scale.is_a?(Numeric)
-        if @scale.zero?
-          raise(ArgumentError, 'Scale must be a ratio or a set of width and height')
-        end
+      case @scale
+      when Numeric
+        raise(ArgumentError, 'Scale must be a ratio or a set of width and height') if @scale.zero?
 
         img.scale!(@scale)
-      elsif @scale.is_a?(Array)
+      when Array
         img.scale!(@scale[0], @scale[1])
       else
         raise(ArgumentError, 'Scale must be a ratio or a set of width and height')
@@ -139,9 +138,7 @@ class PixelChart
   # @param data [Object] The object to check
   # @return [Object] Untouched input object
   def check_int(data)
-    unless data.is_a?(Integer)
-      raise(ArgumentError, 'Argument is not an integer')
-    end
+    raise(ArgumentError, 'Argument is not an integer') unless data.is_a?(Integer)
 
     data
   end
@@ -171,18 +168,15 @@ class PixelChart
     raise(ArgumentError, 'Argument is not an array') unless data.is_a?(Array)
 
     data.each do |item|
-      if item == :random
+      case item
+      when :random
         # nothing
-      elsif item.is_a?(Array)
+      when Array
         raise(ArgumentError, 'RGB must contains 3 values') unless item.size == 3
 
         item.each do |i|
-          unless i.is_a?(Integer)
-            raise(ArgumentError, 'RGB values are not integers')
-          end
-          unless (0..255).include?(i)
-            raise(ArgumentError, 'RGB values must be between 0 and 255')
-          end
+          raise(ArgumentError, 'RGB values are not integers') unless i.is_a?(Integer)
+          raise(ArgumentError, 'RGB values must be between 0 and 255') unless (0..255).include?(i)
         end
       else
         raise(ArgumentError, 'Colors are not a RGB array or :random')
@@ -197,9 +191,7 @@ class PixelChart
   # @return [Object] Untouched input object
   def check_backend(data)
     accepted_values = %i[rmagick rubyvips]
-    unless accepted_values.include?(data)
-      raise(ArgumentError, "Backend must be #{accepted_values.join(' or ')}")
-    end
+    raise(ArgumentError, "Backend must be #{accepted_values.join(' or ')}") unless accepted_values.include?(data)
 
     data
   end
