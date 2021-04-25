@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description   = s.summary
   s.authors       = ['Alexandre ZANNI']
   s.email         = 'alexandre.zanni@engineer.com'
-  s.homepage      = 'https://pixelchart.cf/'
+  s.homepage      = 'https://noraj.github.io/PixelChart/'
   s.license       = 'MIT'
 
   s.files         = Dir['bin/*'] + Dir['lib/**/*.rb'] + ['LICENSE.txt']
@@ -22,8 +22,8 @@ Gem::Specification.new do |s|
     'yard.run'          => 'yard',
     'bug_tracker_uri'   => 'https://github.com/noraj/PixelChart/issues',
     'changelog_uri'     => 'https://github.com/noraj/PixelChart/blob/master/pages/CHANGELOG.md',
-    'documentation_uri' => 'https://pixelchart.cf/yard/',
-    'homepage_uri'      => 'https://pixelchart.cf/',
+    'documentation_uri' => 'https://noraj.github.io/PixelChart/yard/',
+    'homepage_uri'      => 'https://noraj.github.io/PixelChart/',
     'source_code_uri'   => 'https://github.com/noraj/PixelChart'
   }
 

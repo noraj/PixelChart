@@ -39,7 +39,7 @@ Example for Linux distros:
 $ gem install pixelchart
 ```
 
-See [the documentation](https://pixelchart.cf/yard/file.Install.html) for more more advanced options.
+See [the documentation](https://noraj.github.io/PixelChart/yard/file.Install.html) for more more advanced options.
 
 ## Usage
 
@@ -50,18 +50,18 @@ $ pixelchart draw test.csv test.png -w 100 -h 100 -s 3
 [+] Image saved
 ```
 
-See the [CLI documentation](https://pixelchart.cf/yard/file.CLI.html).
+See the [CLI documentation](https://noraj.github.io/PixelChart/yard/file.CLI.html).
 
 **library**
 
-See the [library documentation](https://pixelchart.cf/yard/PixelChart.html).
+See the [library documentation](https://noraj.github.io/PixelChart/yard/PixelChart.html).
 
 **scenarios**
 
-See some [scenarios](https://pixelchart.cf/yard/file.Scenarios.html) with examples.
+See some [scenarios](https://noraj.github.io/PixelChart/yard/file.Scenarios.html) with examples.
 
 ## Documentation
 
-- [Custom domain](https://pixelchart.cf/yard/PixelChart.html)
+- [Custom domain](https://noraj.github.io/PixelChart/yard/PixelChart.html)
 - [Backup GitHub domain](https://noraj.github.io/PixelChart/yard/PixelChart.html)
 - [RubyDoc hosted](https://www.rubydoc.info/gems/pixelchart/PixelChart)

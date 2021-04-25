@@ -62,7 +62,6 @@ See some {file:pages/Scenarios.md scenarios} with examples.
 
 ## Documentation
 
-- [Custom domain](https://pixelchart.cf/yard/PixelChart.html)
-- [Backup GitHub domain](https://noraj.github.io/PixelChart/yard/PixelChart.html)
+- [GitHub domain](https://noraj.github.io/PixelChart/yard/PixelChart.html)
 - [RubyDoc hosted](https://www.rubydoc.info/gems/pixelchart/PixelChart)
 
