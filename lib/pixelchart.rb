@@ -19,7 +19,7 @@ class PixelChart
   # @param width [Integer] Desired width of the image.
   # @param height [Integer] Desired height of the image.
   # @option opts [Array<Color>] :colors Must be an array containing 2 values.
-  #   Each value is either the +:random+ symbol to get a random color or a
+  #   Each value is either the `:random` symbol to get a random color or a
   #   color given as RGB, so 3 integers in an array.
   # @option opts [Scale] :scale Scale the image to dimensions or with a ratio.
   #   Ratio must be a positive (non-nul) float or integer, and dimensions must
@@ -41,8 +41,8 @@ class PixelChart
   # Generate and save the image
   # @param filename [String] Name of the output image.
   # @param opts [Hash] options for image processing
-  # @option opts [Symbol] :backend Image processing backend, +:rmagick+ for
-  #   Rmagick/Imagemagick or +:rubyvips+ for ruby-vips/libvips.
+  # @option opts [Symbol] :backend Image processing backend, `:rmagick` for
+  #   Rmagick/Imagemagick or `:rubyvips` for ruby-vips/libvips.
   def draw(filename, opts = {})
     opts[:backend] ||= :rmagick
     backend = check_backend(opts[:backend])

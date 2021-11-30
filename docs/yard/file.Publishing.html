@@ -6,7 +6,7 @@
 <title>
   File: Publishing
   
-    &mdash; Documentation by YARD 0.9.24
+    &mdash; Documentation by YARD 0.9.27
   
 </title>
 
@@ -58,30 +58,24 @@
       </div>
 
       <div id="content"><div id='filecontents'><h2>On Rubygems.org</h2>
-
 <pre class="code ruby"><code class="ruby">$ git tag -a vx.x.x
 $ git push --follow-tags
 $ gem push pixelchart-x.x.x.gem
 </code></pre>
-
 <p>See <a href="https://guides.rubygems.org/publishing/">https://guides.rubygems.org/publishing/</a>.</p>
-
-<p>On new release don&#39;t forget to rebuild the library documentation:</p>
-
+<p>On new release don't forget to rebuild the library documentation:</p>
 <pre class="code ruby"><code class="ruby">$ bundle exec yard doc
 </code></pre>
-
 <h2>On AUR</h2>
-
 <pre class="code ruby"><code class="ruby">$ updpkgsums
 $ makepkg --printsrcinfo &gt; .SRCINFO
 </code></pre>
 </div></div>
 
       <div id="footer">
-  Generated on Fri Apr 17 18:11:53 2020 by
+  Generated on Tue Nov 30 19:15:20 2021 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.24 (ruby-2.7.0).
+  0.9.27 (ruby-3.0.1).
 </div>
 
     </div>

@@ -19,27 +19,19 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   s.metadata = {
-    'yard.run'          => 'yard',
-    'bug_tracker_uri'   => 'https://github.com/noraj/PixelChart/issues',
-    'changelog_uri'     => 'https://github.com/noraj/PixelChart/blob/master/pages/CHANGELOG.md',
-    'documentation_uri' => 'https://noraj.github.io/PixelChart/yard/',
-    'homepage_uri'      => 'https://noraj.github.io/PixelChart/',
-    'source_code_uri'   => 'https://github.com/noraj/PixelChart'
+    'yard.run'              => 'yard',
+    'bug_tracker_uri'       => 'https://github.com/noraj/PixelChart/issues',
+    'changelog_uri'         => 'https://github.com/noraj/PixelChart/blob/master/pages/CHANGELOG.md',
+    'documentation_uri'     => 'https://noraj.github.io/PixelChart/yard/',
+    'homepage_uri'          => 'https://noraj.github.io/PixelChart/',
+    'source_code_uri'       => 'https://github.com/noraj/PixelChart',
+    'rubygems_mfa_required' => 'true'
   }
 
   s.required_ruby_version = ['>= 2.7.0', '< 3.1']
 
   s.add_runtime_dependency('docopt', '~> 0.6') # for argument parsing
-  s.add_runtime_dependency('paint', '~> 2.2') # for colorized ouput
+  s.add_runtime_dependency('paint', '~> 2.2') # for colorized output
   s.add_runtime_dependency('rmagick', '~> 4.1') # image processing (backend 1)
   s.add_runtime_dependency('ruby-vips', '~> 2.0') # image processing (backend 2)
-
-  s.add_development_dependency('bundler', '~> 2.1')
-  s.add_development_dependency('commonmarker', '~> 0.21') # for GMF support in YARD
-  s.add_development_dependency('github-markup', '~> 4.0') # for GMF support in YARD
-  s.add_development_dependency('minitest', '~> 5.12')
-  s.add_development_dependency('rake', '~> 13.0')
-  s.add_development_dependency('redcarpet', '~> 3.5') # for GMF support in YARD
-  s.add_development_dependency('rubocop', '~> 1.8')
-  s.add_development_dependency('yard', '~> 0.9')
 end

@@ -6,7 +6,7 @@
 <title>
   Class: PixelChart
   
-    &mdash; Documentation by YARD 0.9.24
+    &mdash; Documentation by YARD 0.9.27
   
 </title>
 
@@ -106,8 +106,7 @@
 
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
-    
-<p>PixelChart class</p>
+    <p>PixelChart class</p>
 
 
   </div>
@@ -153,8 +152,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>Calculate the possible dimensions (width, height) for a given area.</p>
+    <span class="summary_desc"><div class='inline'><p>Calculate the possible dimensions (width, height) for a given area.</p>
 </div></span>
   
 </li>
@@ -177,8 +175,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>Read the input file to extract the values.</p>
+    <span class="summary_desc"><div class='inline'><p>Read the input file to extract the values.</p>
 </div></span>
   
 </li>
@@ -210,8 +207,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>Calculate the possible dimensions (width, height) for the data of the object.</p>
+    <span class="summary_desc"><div class='inline'><p>Calculate the possible dimensions (width, height) for the data of the object.</p>
 </div></span>
   
 </li>
@@ -234,8 +230,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>Generate and save the image.</p>
+    <span class="summary_desc"><div class='inline'><p>Generate and save the image.</p>
 </div></span>
   
 </li>
@@ -260,8 +255,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>A new instance of PixelChart.</p>
+    <span class="summary_desc"><div class='inline'><p>A new instance of PixelChart.</p>
 </div></span>
   
 </li>
@@ -290,8 +284,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    
-<p>A new instance of PixelChart</p>
+    <p>A new instance of PixelChart</p>
 
 
   </div>
@@ -310,8 +303,8 @@
       
       
         &mdash;
-        <div class='inline'>
-<p>An array containing values (0, 1) used to generate the image.</p>
+        <div class='inline'><p>An array containing values
+(0, 1) used to generate the image.</p>
 </div>
       
     </li>
@@ -326,8 +319,7 @@
       
       
         &mdash;
-        <div class='inline'>
-<p>Desired width of the image.</p>
+        <div class='inline'><p>Desired width of the image.</p>
 </div>
       
     </li>
@@ -342,8 +334,7 @@
       
       
         &mdash;
-        <div class='inline'>
-<p>Desired height of the image.</p>
+        <div class='inline'><p>Desired height of the image.</p>
 </div>
       
     </li>
@@ -360,8 +351,7 @@
       
       
         &mdash;
-        <div class='inline'>
-<p>a customizable set of options</p>
+        <div class='inline'><p>a customizable set of options</p>
 </div>
       
     </li>
@@ -387,8 +377,9 @@
             
           </span>
           
-            &mdash; <div class='inline'>
-<p>Must be an array containing 2 values. Each value is either the <code>:random</code> symbol to get a random color or a color given as RGB, so 3 integers in an array.</p>
+            &mdash; <div class='inline'><p>Must be an array containing 2 values.
+Each value is either the <code>:random</code> symbol to get a random color or a
+color given as RGB, so 3 integers in an array.</p>
 </div>
           
         </li>
@@ -400,8 +391,9 @@
             
           </span>
           
-            &mdash; <div class='inline'>
-<p>Scale the image to dimensions or with a ratio. Ratio must be a positive (non-nul) float or integer, and dimensions must be a set of width and height separated by a comma.</p>
+            &mdash; <div class='inline'><p>Scale the image to dimensions or with a ratio.
+Ratio must be a positive (non-nul) float or integer, and dimensions must
+be a set of width and height separated by a comma.</p>
 </div>
           
         </li>
@@ -469,8 +461,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    
-<p>Calculate the possible dimensions (width, height) for a given area</p>
+    <p>Calculate the possible dimensions (width, height) for a given area</p>
 
 
   </div>
@@ -489,8 +480,7 @@
       
       
         &mdash;
-        <div class='inline'>
-<p>number of values, total of pixels</p>
+        <div class='inline'><p>number of values, total of pixels</p>
 </div>
       
     </li>
@@ -508,8 +498,7 @@
       
       
         &mdash;
-        <div class='inline'>
-<p>Array of possible dimensions</p>
+        <div class='inline'><p>Array of possible dimensions</p>
 </div>
       
     </li>
@@ -522,17 +511,17 @@
       <pre class="lines">
 
 
-59
 60
 61
 62
 63
 64
 65
-66</pre>
+66
+67</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/pixelchart.rb', line 59</span>
+      <pre class="code"><span class="info file"># File 'lib/pixelchart.rb', line 60</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_dimensions'>dimensions</span><span class='lparen'>(</span><span class='id identifier rubyid_area'>area</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_dim'>dim</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
@@ -558,8 +547,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    
-<p>Read the input file to extract the values</p>
+    <p>Read the input file to extract the values</p>
 
 
   </div>
@@ -578,8 +566,8 @@
       
       
         &mdash;
-        <div class='inline'>
-<p>Name of the input file containing data. Values must be 0, 1, true, false and separated by commas.</p>
+        <div class='inline'><p>Name of the input file containing data. Values must
+be 0, 1, true, false and separated by commas.</p>
 </div>
       
     </li>
@@ -597,8 +585,7 @@
       
       
         &mdash;
-        <div class='inline'>
-<p>Array of 0, 1. Can be directly passed to initialize</p>
+        <div class='inline'><p>Array of 0, 1. Can be directly passed to initialize</p>
 </div>
       
     </li>
@@ -611,7 +598,6 @@
       <pre class="lines">
 
 
-78
 79
 80
 81
@@ -619,10 +605,11 @@
 83
 84
 85
-86</pre>
+86
+87</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/pixelchart.rb', line 78</span>
+      <pre class="code"><span class="info file"># File 'lib/pixelchart.rb', line 79</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_load_file'>load_file</span><span class='lparen'>(</span><span class='id identifier rubyid_filename'>filename</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_content'>content</span> <span class='op'>=</span> <span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_read'>read</span><span class='lparen'>(</span><span class='id identifier rubyid_filename'>filename</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\s+</span><span class='regexp_end'>/</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
@@ -655,8 +642,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    
-<p>Calculate the possible dimensions (width, height) for the data of the object</p>
+    <p>Calculate the possible dimensions (width, height) for the data of the object</p>
 
 
   </div>
@@ -674,8 +660,7 @@
       
       
         &mdash;
-        <div class='inline'>
-<p>Array of possible dimensions</p>
+        <div class='inline'><p>Array of possible dimensions</p>
 </div>
       
     </li>
@@ -688,12 +673,12 @@
       <pre class="lines">
 
 
-70
 71
-72</pre>
+72
+73</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/pixelchart.rb', line 70</span>
+      <pre class="code"><span class="info file"># File 'lib/pixelchart.rb', line 71</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_dimensions'>dimensions</span>
   <span class='id identifier rubyid_dimensions'>dimensions</span><span class='lparen'>(</span><span class='ivar'>@data</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='rparen'>)</span>
@@ -714,8 +699,7 @@
   
 </h3><div class="docstring">
   <div class="discussion">
-    
-<p>Generate and save the image</p>
+    <p>Generate and save the image</p>
 
 
   </div>
@@ -734,8 +718,7 @@
       
       
         &mdash;
-        <div class='inline'>
-<p>Name of the output image.</p>
+        <div class='inline'><p>Name of the output image.</p>
 </div>
       
     </li>
@@ -752,8 +735,7 @@
       
       
         &mdash;
-        <div class='inline'>
-<p>options for image processing</p>
+        <div class='inline'><p>options for image processing</p>
 </div>
       
     </li>
@@ -775,8 +757,8 @@
             
           </span>
           
-            &mdash; <div class='inline'>
-<p>Image processing backend, <code>:rmagick</code> for Rmagick/Imagemagick or <code>:rubyvips</code> for ruby-vips/libvips.</p>
+            &mdash; <div class='inline'><p>Image processing backend, <code>:rmagick</code> for
+Rmagick/Imagemagick or <code>:rubyvips</code> for ruby-vips/libvips.</p>
 </div>
           
         </li>
@@ -799,7 +781,8 @@
 51
 52
 53
-54</pre>
+54
+55</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/pixelchart.rb', line 46</span>
@@ -807,9 +790,10 @@
 <span class='kw'>def</span> <span class='id identifier rubyid_draw'>draw</span><span class='lparen'>(</span><span class='id identifier rubyid_filename'>filename</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:backend</span><span class='rbracket'>]</span> <span class='op'>||=</span> <span class='symbol'>:rmagick</span>
   <span class='id identifier rubyid_backend'>backend</span> <span class='op'>=</span> <span class='id identifier rubyid_check_backend'>check_backend</span><span class='lparen'>(</span><span class='id identifier rubyid_opts'>opts</span><span class='lbracket'>[</span><span class='symbol'>:backend</span><span class='rbracket'>]</span><span class='rparen'>)</span>
-  <span class='kw'>if</span> <span class='id identifier rubyid_backend'>backend</span> <span class='op'>==</span> <span class='symbol'>:rmagick</span>
+  <span class='kw'>case</span> <span class='id identifier rubyid_backend'>backend</span>
+  <span class='kw'>when</span> <span class='symbol'>:rmagick</span>
     <span class='id identifier rubyid_draw_rmagick'>draw_rmagick</span><span class='lparen'>(</span><span class='id identifier rubyid_filename'>filename</span><span class='rparen'>)</span>
-  <span class='kw'>elsif</span> <span class='id identifier rubyid_backend'>backend</span> <span class='op'>==</span> <span class='symbol'>:rubyvips</span>
+  <span class='kw'>when</span> <span class='symbol'>:rubyvips</span>
     <span class='id identifier rubyid_draw_rubyvips'>draw_rubyvips</span><span class='lparen'>(</span><span class='id identifier rubyid_filename'>filename</span><span class='rparen'>)</span>
   <span class='kw'>end</span>
 <span class='kw'>end</span></pre>
@@ -823,9 +807,9 @@
 </div>
 
       <div id="footer">
-  Generated on Fri Apr 17 18:11:53 2020 by
+  Generated on Tue Nov 30 19:15:20 2021 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.24 (ruby-2.7.0).
+  0.9.27 (ruby-3.0.1).
 </div>
 
     </div>

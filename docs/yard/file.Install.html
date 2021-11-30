@@ -6,7 +6,7 @@
 <title>
   File: Install
   
-    &mdash; Documentation by YARD 0.9.24
+    &mdash; Documentation by YARD 0.9.27
   
 </title>
 
@@ -58,43 +58,27 @@
       </div>
 
       <div id="content"><div id='filecontents'><h2>Production</h2>
-
 <h3>Install from rubygems.org</h3>
-
 <pre class="code ruby"><code class="ruby">$ gem install pixelchart
 </code></pre>
-
 <p>Gem: <a href="https://rubygems.org/gems/pixelchart">pixelchart</a></p>
-
 <h3>Install from ArchLinux</h3>
-
 <p>Manually:</p>
-
 <pre class="code ruby"><code class="ruby">$ git clone https://aur.archlinux.org/pixelchart.git
 $ cd pixelchart
 $ makepkg -sic
 </code></pre>
-
 <p>With an AUR helper (<a href="https://wiki.archlinux.org/index.php/AUR_helpers#Pacman_wrappers">Pacman wrappers</a>), eg. pikaur:</p>
-
 <pre class="code ruby"><code class="ruby">$ pikaur -S pixelchart
 </code></pre>
-
 <p>AUR: <a href="https://aur.archlinux.org/packages/pixelchart/">pixelchart</a></p>
-
 <h2>Development</h2>
-
-<p>It&#39;s better to use <a href="https://github.com/rbenv/rbenv">rbenv</a> to have latests version of ruby and to avoid trashing your system ruby.</p>
-
+<p>It's better to use <a href="https://github.com/rbenv/rbenv">rbenv</a> to have latests version of ruby and to avoid trashing your system ruby.</p>
 <h3>Install from rubygems.org</h3>
-
 <pre class="code ruby"><code class="ruby">$ gem install --development pixelchart
 </code></pre>
-
 <h3>Build from git</h3>
-
 <p>Just replace <code>x.x.x</code> with the gem version you see after <code>gem build</code>.</p>
-
 <pre class="code ruby"><code class="ruby">$ git clone https://github.com/noraj/PixelChart.git pixelchart
 $ cd pixelchart
 $ gem install bundler
@@ -102,42 +86,29 @@ $ bundler install
 $ gem build pixelchart.gemspec
 $ gem install pixelchart-x.x.x.gem
 </code></pre>
-
-<p>Note: if an automatic install is needed you can get the version with <code>gem build pixelchart.gemspec | grep Version | cut -d&#39; &#39; -f4</code>.</p>
-
+<p>Note: if an automatic install is needed you can get the version with <code>gem build pixelchart.gemspec | grep Version | cut -d' ' -f4</code>.</p>
 <h3>Run the library/CLI in irb without installing the gem</h3>
-
 <p>Library:</p>
-
 <pre class="code ruby"><code class="ruby">$ irb -Ilib -rpixelchart
 </code></pre>
-
 <p>CLI tool:</p>
-
 <pre class="code ruby"><code class="ruby">$ ruby -Ilib -rpixelchart bin/pixelchart 
 </code></pre>
-
 <h3>Build the gem doc</h3>
-
 <p><strong>Building locally: for library users</strong></p>
-
 <p>For developers who only want to use the library.</p>
-
 <pre class="code ruby"><code class="ruby">$ bundle exec yard doc
 </code></pre>
-
 <p><strong>Building locally: for developer</strong></p>
-
 <p>For developers who want to participate to the development.</p>
-
 <pre class="code ruby"><code class="ruby">$ bundle exec yard doc --yardopts .yardopts-dev
 </code></pre>
 </div></div>
 
       <div id="footer">
-  Generated on Fri Apr 17 18:11:53 2020 by
+  Generated on Tue Nov 30 19:15:20 2021 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.24 (ruby-2.7.0).
+  0.9.27 (ruby-3.0.1).
 </div>
 
     </div>

@@ -6,7 +6,7 @@
 <title>
   File: Scenarios
   
-    &mdash; Documentation by YARD 0.9.24
+    &mdash; Documentation by YARD 0.9.27
   
 </title>
 
@@ -58,18 +58,12 @@
       </div>
 
       <div id="content"><div id='filecontents'><h2>Default</h2>
-
 <p>Just display a representation of binary data.</p>
-
 <pre class="code ruby"><code class="ruby">pixelchart draw test.csv test.png -w 100 -h 100 -s 3
 </code></pre>
-
-<p><img src="../images/default.png" alt=""></p>
-
+<p><img src="../images/default.png" alt="" /></p>
 <h2>Prime numbers</h2>
-
 <p>A representation of prime numbers under 10,000.</p>
-
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>pixelchart</span><span class='tstring_end'>&#39;</span></span>
 <span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>prime</span><span class='tstring_end'>&#39;</span></span>
 
@@ -81,14 +75,10 @@
 <span class='id identifier rubyid_im'>im</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="PixelChart.html" title="PixelChart (class)">PixelChart</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="PixelChart.html#initialize-instance_method" title="PixelChart#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_primes'>primes</span><span class='comma'>,</span> <span class='int'>100</span><span class='comma'>,</span> <span class='int'>100</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
 <span class='id identifier rubyid_im'>im</span><span class='period'>.</span><span class='id identifier rubyid_draw'>draw</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>primes.png</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
 </code></pre>
-
-<p><img src="../images/primes.png" alt=""></p>
-
+<p><img src="../images/primes.png" alt="" /></p>
 <h2>Malware hash</h2>
-
 <p>Create a unique fingerprint image for a malware (eg.
 <a href="https://www.virustotal.com/gui/file/142b638c6a60b60c7f9928da4fb85a5a8e1422a9ffdc9ee49e17e56ccca9cf6e/details">VirusTotal</a>).</p>
-
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>pixelchart</span><span class='tstring_end'>&#39;</span></span>
 <span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ctf_party</span><span class='tstring_end'>&#39;</span></span>
 
@@ -101,14 +91,10 @@
 <span class='id identifier rubyid_im'>im</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="PixelChart.html" title="PixelChart (class)">PixelChart</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="PixelChart.html#initialize-instance_method" title="PixelChart#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_sha256'>sha256</span><span class='comma'>,</span> <span class='int'>23</span><span class='comma'>,</span> <span class='int'>11</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
 <span class='id identifier rubyid_im'>im</span><span class='period'>.</span><span class='id identifier rubyid_draw'>draw</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>virus.png</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
 </code></pre>
-
-<p><img src="../images/virus.png" alt=""></p>
-
+<p><img src="../images/virus.png" alt="" /></p>
 <h2>Random data</h2>
-
 <p>Create an image with random data, for example for a default profile image on a
 forum.</p>
-
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>pixelchart</span><span class='tstring_end'>&#39;</span></span>
 
 <span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='int'>0</span> <span class='op'>...</span> <span class='int'>10000</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid__i'>_i</span><span class='op'>|</span> <span class='id identifier rubyid_rand'>rand</span><span class='lparen'>(</span><span class='int'>2</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
@@ -119,13 +105,9 @@ forum.</p>
 <span class='id identifier rubyid_im'>im</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="PixelChart.html" title="PixelChart (class)">PixelChart</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="PixelChart.html#initialize-instance_method" title="PixelChart#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='int'>100</span><span class='comma'>,</span> <span class='int'>100</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
 <span class='id identifier rubyid_im'>im</span><span class='period'>.</span><span class='id identifier rubyid_draw'>draw</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>random.png</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
 </code></pre>
-
-<p><img src="../images/random.png" alt=""></p>
-
+<p><img src="../images/random.png" alt="" /></p>
 <h2>The logo</h2>
-
 <p>The PixelChart logo was designed pixel by pixel on a 7*7 square.</p>
-
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_░▓▓▓▓▓░'>░▓▓▓▓▓░</span>
 <span class='id identifier rubyid_░░▓░▓▓░'>░░▓░▓▓░</span>
 <span class='id identifier rubyid_░░▓░░▓░'>░░▓░░▓░</span>
@@ -134,9 +116,7 @@ forum.</p>
 <span class='id identifier rubyid_░░▓░░░░'>░░▓░░░░</span>
 <span class='id identifier rubyid_░░▓░░░░'>░░▓░░░░</span>
 </code></pre>
-
 <p>Then convert black and white pixel to 1 and 0.</p>
-
 <pre class="code ruby"><code class="ruby">0,1,1,1,1,1,0
 0,0,1,0,1,1,0
 0,0,1,0,0,1,0
@@ -145,14 +125,10 @@ forum.</p>
 0,0,1,0,0,0,0
 0,0,1,0,0,0,0
 </code></pre>
-
 <p>Inline.</p>
-
 <pre class="code ruby"><code class="ruby">0,1,1,1,1,1,0,0,0,1,0,1,1,0,0,0,1,0,0,1,0,0,0,1,1,1,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0
 </code></pre>
-
 <p>Then map the data and choose some colors.</p>
-
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>pixelchart</span><span class='tstring_end'>&#39;</span></span>
 
 <span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>1</span><span class='comma'>,</span><span class='int'>1</span><span class='comma'>,</span><span class='int'>1</span><span class='comma'>,</span><span class='int'>1</span><span class='comma'>,</span><span class='int'>1</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>1</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>1</span><span class='comma'>,</span><span class='int'>1</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>1</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>1</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>1</span><span class='comma'>,</span><span class='int'>1</span><span class='comma'>,</span><span class='int'>1</span><span class='comma'>,</span><span class='int'>1</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>1</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>1</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>1</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>0</span><span class='rbracket'>]</span>
@@ -163,16 +139,14 @@ forum.</p>
 <span class='id identifier rubyid_im'>im</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="PixelChart.html" title="PixelChart (class)">PixelChart</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="PixelChart.html#initialize-instance_method" title="PixelChart#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='int'>7</span><span class='comma'>,</span> <span class='int'>7</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
 <span class='id identifier rubyid_im'>im</span><span class='period'>.</span><span class='id identifier rubyid_draw'>draw</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>logo.png</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
 </code></pre>
-
 <p>Tada! The logo is done!</p>
-
-<p><img src="../images/logo.png" alt=""></p>
+<p><img src="../images/logo.png" alt="" /></p>
 </div></div>
 
       <div id="footer">
-  Generated on Fri Apr 17 18:11:53 2020 by
+  Generated on Tue Nov 30 19:15:20 2021 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.24 (ruby-2.7.0).
+  0.9.27 (ruby-3.0.1).
 </div>
 
     </div>
