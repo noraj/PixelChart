@@ -41,7 +41,9 @@ GEM
     ruby-vips (2.1.4)
       ffi (~> 1.12)
     unicode-display_width (2.1.0)
-    yard (0.9.26)
+    webrick (1.7.0)
+    yard (0.9.27)
+      webrick (~> 1.7.0)
 
 PLATFORMS
   ruby
