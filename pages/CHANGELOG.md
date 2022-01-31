@@ -1,10 +1,14 @@
 ## [unreleased]
 
+## [1.1.0]
+
 - Dependencies:
   - Update to yard [v0.9.27](https://github.com/lsegal/yard/releases/tag/v0.9.27)
     - Move from Redcarpet to CommonMarker markdown provider
     - Move doc syntax from Rdoc to markdown
   - Move dev dependencies from gemspec to gemfile
+- Chore:
+  - Add support for Ruby 3.1
 
 ## [1.0.2]
 
