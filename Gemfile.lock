@@ -15,7 +15,7 @@ GEM
     docopt (0.6.1)
     ffi (1.15.4)
     json (2.6.2)
-    minitest (5.16.2)
+    minitest (5.16.3)
     paint (2.3.0)
     parallel (1.22.1)
     parser (3.1.2.1)
