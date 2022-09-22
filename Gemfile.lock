@@ -11,7 +11,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
-    commonmarker (0.23.5)
+    commonmarker (0.23.6)
     docopt (0.6.1)
     ffi (1.15.4)
     json (2.6.2)
