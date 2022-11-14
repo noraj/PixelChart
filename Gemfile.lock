@@ -25,7 +25,7 @@ GEM
     regexp_parser (2.6.0)
     rexml (3.2.5)
     rmagick (5.0.0)
-    rubocop (1.38.0)
+    rubocop (1.39.0)
       json (~> 2.3)
       parallel (~> 1.10)
       parser (>= 3.1.2.1)
@@ -57,7 +57,7 @@ DEPENDENCIES
   pixelchart!
   rake (~> 13.0)
   rmagick (~> 5.0)
-  rubocop (~> 1.38)
+  rubocop (~> 1.39)
   ruby-vips (~> 2.0)
   yard (>= 0.9.27, < 0.10)
 
