@@ -23,11 +23,11 @@ GEM
     pkg-config (1.5.1)
     rainbow (3.1.1)
     rake (13.0.6)
-    regexp_parser (2.6.2)
+    regexp_parser (2.7.0)
     rexml (3.2.5)
     rmagick (5.1.0)
       pkg-config (~> 1.4)
-    rubocop (1.44.1)
+    rubocop (1.45.1)
       json (~> 2.3)
       parallel (~> 1.10)
       parser (>= 3.2.0.0)
@@ -59,7 +59,7 @@ DEPENDENCIES
   pixelchart!
   rake (~> 13.0)
   rmagick (~> 5.1)
-  rubocop (~> 1.44)
+  rubocop (~> 1.45)
   ruby-vips (~> 2.0)
   yard (>= 0.9.27, < 0.10)
 
