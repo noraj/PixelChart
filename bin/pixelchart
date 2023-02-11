@@ -40,7 +40,7 @@ DOCOPT
 
 begin
   args = Docopt.docopt(doc, version: PixelChart::VERSION)
-  pp args if args['--debug']
+  puts args if args['--debug']
   Paint.mode = 0 if args['--no-color']
   if args['draw']
     data = PixelChart.load_file(args['<input>'])
