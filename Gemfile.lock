@@ -27,7 +27,7 @@ GEM
     rexml (3.2.5)
     rmagick (5.2.0)
       pkg-config (~> 1.4)
-    rubocop (1.50.1)
+    rubocop (1.50.2)
       json (~> 2.3)
       parallel (~> 1.10)
       parser (>= 3.2.0.0)
