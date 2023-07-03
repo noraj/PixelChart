@@ -30,7 +30,7 @@ GEM
     rexml (3.2.5)
     rmagick (5.2.0)
       pkg-config (~> 1.4)
-    rubocop (1.53.1)
+    rubocop (1.54.0)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -61,7 +61,7 @@ DEPENDENCIES
   pixelchart!
   rake (~> 13.0)
   rmagick (~> 5.2)
-  rubocop (~> 1.53)
+  rubocop (~> 1.54)
   ruby-vips (~> 2.0)
   yard (>= 0.9.27, < 0.10)
 
