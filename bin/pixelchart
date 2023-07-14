@@ -61,11 +61,11 @@ begin
     end
     opts[:backend] = args['--backend'].to_sym if args['--backend']
     if args['--scale']
-      opts[:scale] =  if /,/.match?(args['--scale']) # dimensions
-                        args['--scale'].split(',').map(&:to_i)
-                      else # ratio
-                        args['--scale'].to_f
-                      end
+      opts[:scale] = if /,/.match?(args['--scale']) # dimensions
+                       args['--scale'].split(',').map(&:to_i)
+                     else # ratio
+                       args['--scale'].to_f
+                     end
     end
     pc = PixelChart.new(data, width, height, opts)
     pc.draw(filename, opts)
