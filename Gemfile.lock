@@ -14,7 +14,7 @@ GEM
     base64 (0.1.1)
     commonmarker (0.23.10)
     docopt (0.6.1)
-    ffi (1.15.5)
+    ffi (1.16.3)
     json (2.6.3)
     language_server-protocol (3.17.0.3)
     minitest (5.19.0)
@@ -46,7 +46,7 @@ GEM
     rubocop-ast (1.29.0)
       parser (>= 3.2.1.0)
     ruby-progressbar (1.13.0)
-    ruby-vips (2.1.4)
+    ruby-vips (2.2.0)
       ffi (~> 1.12)
     unicode-display_width (2.5.0)
     yard (0.9.34)
@@ -64,7 +64,7 @@ DEPENDENCIES
   rake (~> 13.0)
   rmagick (~> 5.3)
   rubocop (~> 1.57)
-  ruby-vips (~> 2.0)
+  ruby-vips (~> 2.2)
   yard (>= 0.9.27, < 0.10)
 
 BUNDLED WITH
