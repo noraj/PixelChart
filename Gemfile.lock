@@ -11,7 +11,6 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
-    base64 (0.1.1)
     commonmarker (0.23.10)
     docopt (0.6.1)
     ffi (1.16.3)
@@ -31,8 +30,7 @@ GEM
     rexml (3.2.6)
     rmagick (5.3.0)
       pkg-config (~> 1.4)
-    rubocop (1.57.1)
-      base64 (~> 0.1.1)
+    rubocop (1.57.2)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
