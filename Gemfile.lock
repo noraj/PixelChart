@@ -25,7 +25,7 @@ GEM
     pkg-config (1.5.2)
     racc (1.7.1)
     rainbow (3.1.1)
-    rake (13.0.6)
+    rake (13.1.0)
     regexp_parser (2.8.2)
     rexml (3.2.6)
     rmagick (5.3.0)
@@ -59,7 +59,7 @@ DEPENDENCIES
   minitest (~> 5.19)
   paint (~> 2.3)
   pixelchart!
-  rake (~> 13.0)
+  rake (~> 13.1)
   rmagick (~> 5.3)
   rubocop (~> 1.57)
   ruby-vips (~> 2.2)
