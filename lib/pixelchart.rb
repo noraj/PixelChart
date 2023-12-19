@@ -131,7 +131,7 @@ class PixelChart
       opts = { kernel: :nearest }
       im = im.resize(@scale, **opts)
     end
-    im.write_to_file(filename, compression: 9, palette: true, colours: 2, Q: 0)
+    im.write_to_file(filename, compression: 9, palette: true, colours: 2, Q: 0, bitdepth: 1)
   end
 
   # Check if the argument is an integer else raise an error

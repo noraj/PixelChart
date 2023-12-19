@@ -3,6 +3,7 @@
 - Deprecation: now requires ruby 3.0+ instead of 2.7+
 - Chore:
   - Add support for Ruby 3.2
+- Lib: define a bit depth of 1 (fix [#1](https://github.com/noraj/PixelChart/issues/1)), even if it seems to be automatic with newer version of (ruby-)vips, to save some storage
 
 ## [1.1.0]
 
