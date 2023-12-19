@@ -1,5 +1,6 @@
 ## [unreleased]
 
+- Deprecation: now requires ruby 3.0+ instead of 2.7+
 - Chore:
   - Add support for Ruby 3.2
 
