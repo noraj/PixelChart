@@ -1,4 +1,4 @@
-## [unreleased]
+## [1.2.0]
 
 - Deprecation: now requires ruby 3.0+ instead of 2.7+
 - Chore:
