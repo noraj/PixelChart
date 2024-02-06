@@ -29,7 +29,7 @@ GEM
     rake (13.1.0)
     regexp_parser (2.9.0)
     rexml (3.2.6)
-    rmagick (5.4.0)
+    rmagick (5.4.1)
       observer (~> 0.1)
       pkg-config (~> 1.4)
     rubocop (1.60.2)
