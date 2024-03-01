@@ -49,7 +49,7 @@ GEM
     ruby-vips (2.2.1)
       ffi (~> 1.12)
     unicode-display_width (2.5.0)
-    yard (0.9.35)
+    yard (0.9.36)
 
 PLATFORMS
   ruby
