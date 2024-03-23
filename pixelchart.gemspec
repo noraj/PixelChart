@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     'documentation_uri'     => 'https://noraj.github.io/PixelChart/yard/',
     'homepage_uri'          => 'https://noraj.github.io/PixelChart/',
     'source_code_uri'       => 'https://github.com/noraj/PixelChart',
+    'funding_uri'           => 'https://github.com/sponsors/noraj',
     'rubygems_mfa_required' => 'true'
   }
 
