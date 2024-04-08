@@ -7,7 +7,7 @@ gemspec
 group :runtime, :cli do
   gem 'docopt', '~> 0.6' # for argument parsing
   gem 'paint', '~> 2.3' # for colorized ouput
-  gem 'rmagick', '~> 5.4' # image processing (backend 1)
+  gem 'rmagick', '~> 5.5' # image processing (backend 1)
   gem 'ruby-vips', '~> 2.2' # image processing (backend 2)
 end
 
