@@ -14,7 +14,7 @@ GEM
     commonmarker (0.23.10)
     docopt (0.6.1)
     ffi (1.16.3)
-    json (2.7.1)
+    json (2.7.2)
     language_server-protocol (3.17.0.3)
     minitest (5.22.3)
     observer (0.1.2)
@@ -32,7 +32,7 @@ GEM
     rmagick (5.5.0)
       observer (~> 0.1)
       pkg-config (~> 1.4)
-    rubocop (1.62.1)
+    rubocop (1.63.0)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -63,7 +63,7 @@ DEPENDENCIES
   pixelchart!
   rake (~> 13.2)
   rmagick (~> 5.5)
-  rubocop (~> 1.62)
+  rubocop (~> 1.63)
   ruby-vips (~> 2.2)
   yard (>= 0.9.27, < 0.10)
 
