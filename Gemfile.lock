@@ -32,7 +32,7 @@ GEM
     rmagick (5.5.0)
       observer (~> 0.1)
       pkg-config (~> 1.4)
-    rubocop (1.63.2)
+    rubocop (1.63.3)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
