@@ -28,7 +28,8 @@ GEM
     rainbow (3.1.1)
     rake (13.2.1)
     regexp_parser (2.9.0)
-    rexml (3.2.6)
+    rexml (3.2.8)
+      strscan (>= 3.0.9)
     rmagick (6.0.0)
       observer (~> 0.1)
       pkg-config (~> 1.4)
@@ -48,6 +49,7 @@ GEM
     ruby-progressbar (1.13.0)
     ruby-vips (2.2.1)
       ffi (~> 1.12)
+    strscan (3.1.0)
     unicode-display_width (2.5.0)
     yard (0.9.36)
 
