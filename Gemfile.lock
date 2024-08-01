@@ -25,16 +25,16 @@ GEM
       ast (~> 2.4.1)
       racc
     pkg-config (1.5.6)
-    racc (1.8.0)
+    racc (1.8.1)
     rainbow (3.1.1)
     rake (13.2.1)
     regexp_parser (2.9.2)
-    rexml (3.3.1)
+    rexml (3.3.4)
       strscan
     rmagick (6.0.1)
       observer (~> 0.1)
       pkg-config (~> 1.4)
-    rubocop (1.65.0)
+    rubocop (1.65.1)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -67,7 +67,7 @@ DEPENDENCIES
   pixelchart!
   rake (~> 13.2)
   rmagick (~> 6.0)
-  rubocop (~> 1.64)
+  rubocop (~> 1.65)
   ruby-vips (~> 2.2)
   yard (>= 0.9.27, < 0.10)
 
