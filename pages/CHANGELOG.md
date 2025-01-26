@@ -1,3 +1,9 @@
+## [unreleased]
+
+- **Breaking change**: drop Ruby 3.0 support (EOL)
+- Chore:
+  - Add support for Ruby 3.4
+
 ## [1.2.0]
 
 - Deprecation: now requires ruby 3.0+ instead of 2.7+
