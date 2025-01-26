@@ -24,6 +24,8 @@ jobs:
       BUNDLE_WITHOUT: docs development # https://bundler.io/v1.5/groups.html
     steps:
     - uses: actions/checkout@v4 # https://github.com/actions/checkout
+    - name: Install system dependencies
+      run: sudo apt-get install -y libvips-dev imagemagick
     - name: Set up Ruby
     # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
     # change this to (see https://github.com/ruby/setup-ruby#versioning):
