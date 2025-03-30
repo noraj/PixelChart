@@ -16,9 +16,9 @@ group :development, :install do
 end
 
 group :development, :test do
+  gem 'irb'
   gem 'minitest', '~> 5.25'
   gem 'rake', '~> 13.2'
-  gem 'irb'
 end
 
 group :development, :lint do
