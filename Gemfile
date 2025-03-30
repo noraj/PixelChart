@@ -12,16 +12,17 @@ group :runtime, :cli do
 end
 
 group :development, :install do
-  gem 'bundler', '~> 2.1'
+  gem 'bundler', '~> 2.6'
 end
 
 group :development, :test do
   gem 'minitest', '~> 5.25'
   gem 'rake', '~> 13.2'
+  gem 'irb'
 end
 
 group :development, :lint do
-  gem 'rubocop', '~> 1.66'
+  gem 'rubocop', '~> 1.75'
 end
 
 group :development, :docs do
