@@ -12,12 +12,12 @@ group :runtime, :cli do
 end
 
 group :development, :install do
-  gem 'bundler', '~> 2.6'
+  gem 'bundler', '~> 4.0'
 end
 
 group :development, :test do
-  gem 'irb'
-  gem 'minitest', '~> 5.25'
+  # gem 'irb'
+  gem 'minitest', '~> 6.0'
   gem 'rake', '~> 13.2'
 end
 
@@ -26,6 +26,10 @@ group :development, :lint do
 end
 
 group :development, :docs do
-  gem 'commonmarker', '~> 0.23' # for markdown support in YARD
-  gem 'yard', ['>= 0.9.27', '< 0.10']
+  # 2.6.0 currently not working on ruby 4.0
+  # https://github.com/gjtorikian/commonmarker/issues/427
+  gem 'commonmarker', '~> 2.0' # for markdown support in YARD
+  # gem 'yard', ['>= 0.9.27', '< 0.10']
+  # https://github.com/lsegal/yard/issues/1528
+  gem 'yard', github: 'ParadoxV5/yard', ref: '9e869c940859570b07b81c5eadd6070e76f6291e', branch: 'commonmarker-1.0'
 end

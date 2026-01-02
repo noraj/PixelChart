@@ -35,8 +35,8 @@ Example for Linux distros:
 
 ## Installation
 
-```
-$ gem install pixelchart
+```bash
+gem install pixelchart
 ```
 
 See the {file:pages/Install.md the documentation} for more advanced options.

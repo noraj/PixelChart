@@ -1,3 +1,12 @@
+## [1.4.0]
+
+- **Breaking change**: drop Ruby 3.1 support (EOL)
+- Library:
+  - Fix replacing newlines with commas when loading multilines CSV (previously removed, that was causing a loss of pixels)
+- Chore:
+  - Add support for Ruby 4.0
+  - Update dependencies
+
 ## [1.3.0]
 
 - **Breaking change**: drop Ruby 3.0 support (EOL)

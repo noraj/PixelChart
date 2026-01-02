@@ -2,7 +2,7 @@
 
 Just display a representation of binary data.
 
-```
+```bash
 pixelchart draw test.csv test.png -w 100 -h 100 -s 3
 ```
 

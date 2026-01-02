@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 # Ruby internal
-require 'set'
 # Project internal
 require 'pixelchart/version'
 # External
@@ -77,7 +76,8 @@ class PixelChart
   #   be 0, 1, true, false and separated by commas.
   # @return [Array<Integer>] Array of 0, 1. Can be directly passed to initialize
   def self.load_file(filename)
-    content = File.read(filename).gsub(/\s+/, '')
+    # inline multi-lines CSV and strip all spaces
+    content = File.read(filename).gsub("\n", ',').gsub(/\s+/, '')
     data = content.split(',')
     data.each_with_index do |x, i|
       data[i] = 0 if x == '0' || x.downcase == 'false'
