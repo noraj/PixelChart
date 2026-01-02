@@ -9,9 +9,6 @@ require 'vips'
 
 # PixelChart class
 class PixelChart
-  # Constants
-  include Version
-
   # A new instance of PixelChart
   # @param data [Array<Boolean>] An array containing values
   #   (0, 1) used to generate the image.

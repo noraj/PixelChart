@@ -1,5 +1,10 @@
 ## [1.4.0]
 
+- **Chore**:
+  - Change the way version is included. Instead of including a module `Version`, directly add the `VERSION` constant in the `PixelChart` class. It could avoid namespace collision with that kind of generic name.
+
+## [1.4.0]
+
 - **Breaking change**: drop Ruby 3.1 support (EOL)
 - Library:
   - Fix replacing newlines with commas when loading multilines CSV (previously removed, that was causing a loss of pixels)

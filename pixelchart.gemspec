@@ -4,7 +4,7 @@ require_relative 'lib/pixelchart/version'
 
 Gem::Specification.new do |s|
   s.name          = 'pixelchart'
-  s.version       = Version::VERSION
+  s.version       = PixelChart::VERSION
   s.platform      = Gem::Platform::RUBY
   s.summary       = 'Create a binary pixel map'
   s.description   = s.summary
