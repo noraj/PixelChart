@@ -11,10 +11,10 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.3)
-    commonmarker (2.8.1)
+    commonmarker (2.8.2)
       rb_sys (~> 0.9)
-    commonmarker (2.8.1-arm-linux)
-    commonmarker (2.8.1-x86_64-linux)
+    commonmarker (2.8.2-arm-linux)
+    commonmarker (2.8.2-x86_64-linux)
     docopt (0.6.1)
     drb (2.2.3)
     ffi (1.17.4)
@@ -42,7 +42,7 @@ GEM
     rainbow (3.1.1)
     rake (13.4.2)
     rake-compiler-dock (1.12.0)
-    rb_sys (0.9.127)
+    rb_sys (0.9.128)
       rake-compiler-dock (= 1.12.0)
     regexp_parser (2.12.0)
     rmagick (7.0.0)
