@@ -6,13 +6,13 @@
 <title>
   File: Scenarios
   
-    &mdash; Documentation by YARD 0.9.37
+    &mdash; Documentation by YARD 0.9.43
   
 </title>
 
-  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 
-  <link rel="stylesheet" href="css/common.css" type="text/css" />
+  <link rel="stylesheet" href="css/common.css" type="text/css">
 
 <script type="text/javascript">
   pathId = "Scenarios";
@@ -27,6 +27,8 @@
 
   </head>
   <body>
+    <div id="main_progress" aria-hidden="true"></div>
+
     <div class="nav_wrap">
       <iframe id="nav" src="file_list.html?1"></iframe>
       <div id="resizer"></div>
@@ -57,12 +59,12 @@
         <div class="clear"></div>
       </div>
 
-      <div id="content"><div id='filecontents'><h2>Default</h2>
+      <div id="content"><div id='filecontents'><h2><a href="#default" aria-hidden="true" class="anchor" id="default"></a>Default</h2>
 <p>Just display a representation of binary data.</p>
-<pre class="code ruby"><code class="ruby">pixelchart draw test.csv test.png -w 100 -h 100 -s 3
+<pre class="code bash"><code class="bash">pixelchart draw test.csv test.png -w 100 -h 100 -s 3
 </code></pre>
 <p><img src="../images/default.png" alt="" /></p>
-<h2>Prime numbers</h2>
+<h2><a href="#prime-numbers" aria-hidden="true" class="anchor" id="prime-numbers"></a>Prime numbers</h2>
 <p>A representation of prime numbers under 10,000.</p>
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>pixelchart</span><span class='tstring_end'>&#39;</span></span>
 <span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>prime</span><span class='tstring_end'>&#39;</span></span>
@@ -76,8 +78,8 @@
 <span class='id identifier rubyid_im'>im</span><span class='period'>.</span><span class='id identifier rubyid_draw'>draw</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>primes.png</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
 </code></pre>
 <p><img src="../images/primes.png" alt="" /></p>
-<h2>Malware hash</h2>
-<p>Create a unique fingerprint image for a malware (eg.
+<h2><a href="#malware-hash" aria-hidden="true" class="anchor" id="malware-hash"></a>Malware hash</h2>
+<p>Create a unique fingerprint image for a malware (eg.<br />
 <a href="https://www.virustotal.com/gui/file/142b638c6a60b60c7f9928da4fb85a5a8e1422a9ffdc9ee49e17e56ccca9cf6e/details">VirusTotal</a>).</p>
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>pixelchart</span><span class='tstring_end'>&#39;</span></span>
 <span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ctf_party</span><span class='tstring_end'>&#39;</span></span>
@@ -92,8 +94,8 @@
 <span class='id identifier rubyid_im'>im</span><span class='period'>.</span><span class='id identifier rubyid_draw'>draw</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>virus.png</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
 </code></pre>
 <p><img src="../images/virus.png" alt="" /></p>
-<h2>Random data</h2>
-<p>Create an image with random data, for example for a default profile image on a
+<h2><a href="#random-data" aria-hidden="true" class="anchor" id="random-data"></a>Random data</h2>
+<p>Create an image with random data, for example for a default profile image on a<br />
 forum.</p>
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>pixelchart</span><span class='tstring_end'>&#39;</span></span>
 
@@ -106,7 +108,7 @@ forum.</p>
 <span class='id identifier rubyid_im'>im</span><span class='period'>.</span><span class='id identifier rubyid_draw'>draw</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>random.png</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
 </code></pre>
 <p><img src="../images/random.png" alt="" /></p>
-<h2>The logo</h2>
+<h2><a href="#the-logo" aria-hidden="true" class="anchor" id="the-logo"></a>The logo</h2>
 <p>The PixelChart logo was designed pixel by pixel on a 7*7 square.</p>
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_░▓▓▓▓▓░'>░▓▓▓▓▓░</span>
 <span class='id identifier rubyid_░░▓░▓▓░'>░░▓░▓▓░</span>
@@ -144,9 +146,9 @@ forum.</p>
 </div></div>
 
       <div id="footer">
-  Generated on Sun Mar 30 22:40:38 2025 by
+  Generated on Thu May 21 22:53:09 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.37 (ruby-3.4.1).
+  0.9.43 (ruby-4.0.5).
 </div>
 
     </div>

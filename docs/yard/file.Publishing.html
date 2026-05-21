@@ -6,13 +6,13 @@
 <title>
   File: Publishing
   
-    &mdash; Documentation by YARD 0.9.37
+    &mdash; Documentation by YARD 0.9.43
   
 </title>
 
-  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 
-  <link rel="stylesheet" href="css/common.css" type="text/css" />
+  <link rel="stylesheet" href="css/common.css" type="text/css">
 
 <script type="text/javascript">
   pathId = "Publishing";
@@ -27,6 +27,8 @@
 
   </head>
   <body>
+    <div id="main_progress" aria-hidden="true"></div>
+
     <div class="nav_wrap">
       <iframe id="nav" src="file_list.html?1"></iframe>
       <div id="resizer"></div>
@@ -57,25 +59,25 @@
         <div class="clear"></div>
       </div>
 
-      <div id="content"><div id='filecontents'><h2>On Rubygems.org</h2>
-<pre class="code ruby"><code class="ruby">$ git tag -a vx.x.x
-$ git push --follow-tags
-$ gem push pixelchart-x.x.x.gem
+      <div id="content"><div id='filecontents'><h2><a href="#on-rubygemsorg" aria-hidden="true" class="anchor" id="on-rubygemsorg"></a>On Rubygems.org</h2>
+<pre class="code bash"><code class="bash">git tag -a vx.x.x
+git push --follow-tags
+gem push pixelchart-x.x.x.gem
 </code></pre>
 <p>See <a href="https://guides.rubygems.org/publishing/">https://guides.rubygems.org/publishing/</a>.</p>
 <p>On new release don't forget to rebuild the library documentation:</p>
-<pre class="code ruby"><code class="ruby">$ bundle exec yard doc
+<pre class="code bash"><code class="bash">bundle exec yard doc
 </code></pre>
-<h2>On AUR</h2>
-<pre class="code ruby"><code class="ruby">$ updpkgsums
-$ makepkg --printsrcinfo &gt; .SRCINFO
+<h2><a href="#on-aur" aria-hidden="true" class="anchor" id="on-aur"></a>On AUR</h2>
+<pre class="code bash"><code class="bash">updpkgsums
+makepkg --printsrcinfo &gt; .SRCINFO
 </code></pre>
 </div></div>
 
       <div id="footer">
-  Generated on Sun Mar 30 22:40:38 2025 by
+  Generated on Thu May 21 22:53:09 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.37 (ruby-3.4.1).
+  0.9.43 (ruby-4.0.5).
 </div>
 
     </div>

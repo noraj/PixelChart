@@ -6,13 +6,13 @@
 <title>
   File: CHANGELOG
   
-    &mdash; Documentation by YARD 0.9.37
+    &mdash; Documentation by YARD 0.9.43
   
 </title>
 
-  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 
-  <link rel="stylesheet" href="css/common.css" type="text/css" />
+  <link rel="stylesheet" href="css/common.css" type="text/css">
 
 <script type="text/javascript">
   pathId = "CHANGELOG";
@@ -27,6 +27,8 @@
 
   </head>
   <body>
+    <div id="main_progress" aria-hidden="true"></div>
+
     <div class="nav_wrap">
       <iframe id="nav" src="file_list.html?1"></iframe>
       <div id="resizer"></div>
@@ -57,7 +59,42 @@
         <div class="clear"></div>
       </div>
 
-      <div id="content"><div id='filecontents'><h2>[1.3.0]</h2>
+      <div id="content"><div id='filecontents'><h1><a href="#change-log--release-notes" aria-hidden="true" class="anchor" id="change-log--release-notes"></a>Change log / Release notes</h1>
+<h2><a href="#150" aria-hidden="true" class="anchor" id="150"></a><a href="https://github.com/noraj/PixelChart/releases/tag/v1.5.0">1.5.0</a></h2>
+<ul>
+<li><strong>Breaking change</strong>:
+<ul>
+<li>Drop support for Ruby 3.2
+<ul>
+<li>Ruby 3.2 is (<a href="https://www.ruby-lang.org/en/downloads/branches/">EOL</a>)</li>
+<li>parallel-2.1.0 requires ruby version &gt;= 3.3</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Chore</strong>:
+<ul>
+<li>Fix ruby-vips backend colourspace casting error <a href="https://github.com/noraj/PixelChart/issues/206">#206</a></li>
+<li>Change the way version is included. Instead of including a module <code>Version</code>, directly add the <code>VERSION</code> constant in the <code>PixelChart</code> class. It could avoid namespace collision with that kind of generic name.</li>
+</ul>
+</li>
+</ul>
+<h2><a href="#140" aria-hidden="true" class="anchor" id="140"></a><a href="https://github.com/noraj/PixelChart/releases/tag/v1.4.0">1.4.0</a></h2>
+<ul>
+<li><strong>Breaking change</strong>: drop Ruby 3.1 support (EOL)</li>
+<li>Library:
+<ul>
+<li>Fix replacing newlines with commas when loading multilines CSV (previously removed, that was causing a loss of pixels)</li>
+</ul>
+</li>
+<li>Chore:
+<ul>
+<li>Add support for Ruby 4.0</li>
+<li>Update dependencies</li>
+</ul>
+</li>
+</ul>
+<h2><a href="#130" aria-hidden="true" class="anchor" id="130"></a><a href="https://github.com/noraj/PixelChart/releases/tag/v1.3.0">1.3.0</a></h2>
 <ul>
 <li><strong>Breaking change</strong>: drop Ruby 3.0 support (EOL)</li>
 <li>Chore:
@@ -67,7 +104,7 @@
 </ul>
 </li>
 </ul>
-<h2>[1.2.0]</h2>
+<h2><a href="#120" aria-hidden="true" class="anchor" id="120"></a><a href="https://github.com/noraj/PixelChart/releases/tag/v1.2.0">1.2.0</a></h2>
 <ul>
 <li>Deprecation: now requires ruby 3.0+ instead of 2.7+</li>
 <li>Chore:
@@ -77,7 +114,7 @@
 </li>
 <li>Lib: define a bit depth of 1 (fix <a href="https://github.com/noraj/PixelChart/issues/1">#1</a>), even if it seems to be automatic with newer version of (ruby-)vips, to save some storage</li>
 </ul>
-<h2>[1.1.0]</h2>
+<h2><a href="#110" aria-hidden="true" class="anchor" id="110"></a><a href="https://github.com/noraj/PixelChart/releases/tag/v1.1.0">1.1.0</a></h2>
 <ul>
 <li>Dependencies:
 <ul>
@@ -96,7 +133,7 @@
 </ul>
 </li>
 </ul>
-<h2>[1.0.2]</h2>
+<h2><a href="#102" aria-hidden="true" class="anchor" id="102"></a>[1.0.2]</h2>
 <ul>
 <li>lib: code lint</li>
 <li>dependencies: update</li>
@@ -104,21 +141,21 @@
 <li>deprecation: now requires ruby 2.7+ instead of 2.4+</li>
 <li>doc: fix a CLI value name</li>
 </ul>
-<h2>[1.0.1]</h2>
+<h2><a href="#101" aria-hidden="true" class="anchor" id="101"></a><a href="https://github.com/noraj/PixelChart/releases/tag/v1.0.1">1.0.1</a></h2>
 <ul>
 <li>doc: final documentation</li>
 <li>gem: add metadata to gemspec</li>
 </ul>
-<h2>[1.0.0]</h2>
+<h2><a href="#100" aria-hidden="true" class="anchor" id="100"></a>[1.0.0]</h2>
 <ul>
 <li>Initial version</li>
 </ul>
 </div></div>
 
       <div id="footer">
-  Generated on Sun Mar 30 22:40:38 2025 by
+  Generated on Thu May 21 22:53:09 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.37 (ruby-3.4.1).
+  0.9.43 (ruby-4.0.5).
 </div>
 
     </div>
