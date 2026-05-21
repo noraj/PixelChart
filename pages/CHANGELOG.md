@@ -6,7 +6,9 @@
   - Drop support for Ruby 3.2
     - Ruby 3.2 is ([EOL](https://www.ruby-lang.org/en/downloads/branches/))
     - parallel-2.1.0 requires ruby version >= 3.3
-    
+- **Chore**:
+  - Fix ruby-vips backend colourspace casting error [#206](https://github.com/noraj/PixelChart/issues/206)
+
 ## [1.4.0]
 
 - **Chore**:
