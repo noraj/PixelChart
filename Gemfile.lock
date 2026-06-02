@@ -45,7 +45,7 @@ GEM
     rb_sys (0.9.128)
       rake-compiler-dock (= 1.12.0)
     regexp_parser (2.12.0)
-    rmagick (7.0.1)
+    rmagick (7.0.3)
       observer (~> 0.1)
       pkg-config (~> 1.4)
     rubocop (1.87.0)
