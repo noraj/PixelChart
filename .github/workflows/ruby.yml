@@ -23,7 +23,7 @@ jobs:
     env:
       BUNDLE_WITHOUT: docs development # https://bundler.io/v1.5/groups.html
     steps:
-    - uses: actions/checkout@v6 # https://github.com/actions/checkout
+    - uses: actions/checkout@v7 # https://github.com/actions/checkout
     - name: Install system dependencies
       run: |
         sudo apt-get update
