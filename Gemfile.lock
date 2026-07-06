@@ -11,10 +11,10 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.3)
-    commonmarker (2.8.2)
+    commonmarker (2.8.3)
       rb_sys (~> 0.9)
-    commonmarker (2.8.2-arm-linux)
-    commonmarker (2.8.2-x86_64-linux)
+    commonmarker (2.8.3-arm-linux)
+    commonmarker (2.8.3-x86_64-linux)
     docopt (0.6.1)
     drb (2.2.3)
     ffi (1.17.4)
