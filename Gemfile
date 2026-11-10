@@ -17,7 +17,7 @@ end
 
 group :development, :test do
   # gem 'irb'
-  gem 'minitest', '~> 6.0'
+  gem 'minitest', '~> 6.1'
   gem 'rake', '~> 13.4'
 end
 
