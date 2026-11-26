@@ -37,7 +37,7 @@ GEM
     parser (3.3.14.0)
       ast (~> 2.4.1)
       racc
-    pkg-config (1.6.5)
+    pkg-config (1.6.8)
     prism (2.1.0)
     prism (2.1.0-arm-linux-gnu)
     prism (2.1.0-arm-linux-musl)
@@ -49,7 +49,7 @@ GEM
     rb_sys (0.9.130)
       rake-compiler-dock (= 1.12.0)
     regexp_parser (2.13.4)
-    rmagick (7.2.0)
+    rmagick (7.3.1)
       observer (~> 0.1)
       pkg-config (~> 1.4)
     rubocop (1.92.3)
@@ -94,7 +94,7 @@ DEPENDENCIES
   paint (~> 2.3)
   pixelchart!
   rake (~> 13.4)
-  rmagick (~> 7.2)
+  rmagick (~> 7.3)
   rubocop (~> 1.92)
   ruby-vips (~> 2.3)
   yard (>= 0.9.43, < 0.10)
